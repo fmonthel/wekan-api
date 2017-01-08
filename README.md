@@ -26,7 +26,7 @@ $ git clone https://github.com/LINKIWI/wekan-api.git .
 $ virtualenv env
 $ source env/bin/activate
 # Edit config/database.json to specify the Wekan database location.
-# You can leave the default settings (localhosts:27017/wekan) if you never set a custom one.
+# You can leave the default settings (localhost:27017/wekan) if you never set a custom one.
 $ make bootstrap  # Install dependencies
 $ make serve  # Starts the API server at localhost:5000
 ```
@@ -40,7 +40,7 @@ $ git clone https://github.com/LINKIWI/wekan-api.git .
 $ virtualenv env
 $ source env/bin/activate
 # Edit config/database.json to specify the Wekan database location.
-# You can leave the default settings (localhosts:27017/wekan) if you never set a custom one.
+# You can leave the default settings (localhost:27017/wekan) if you never set a custom one.
 $ make bootstrap  # Install dependencies
 ```
 
