@@ -10,7 +10,7 @@ app = Flask(__name__)
 def init_db():
     config_file = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
-        '../config/database.json',
+        '../../config/database.json',
     )
     database_config = json.loads(open(config_file).read())
 

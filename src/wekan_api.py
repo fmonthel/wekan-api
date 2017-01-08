@@ -1,3 +1,5 @@
+# flake8: noqa: E402, F401
+
 import core.app
 
 app = core.app.app
