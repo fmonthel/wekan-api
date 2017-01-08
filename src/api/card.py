@@ -10,9 +10,9 @@ def cards():
     Retrieve all cards.
     """
     try:
-        cards = list(db.cards.find())
+        all_cards = list(db.cards.find())
         return util.response.success({
-            'cards': cards,
+            'cards': all_cards,
         })
     except:
         return util.response.undefined_error()
@@ -25,6 +25,14 @@ def card_details(card_id):
     """
     try:
         card = db.cards.find_one({'_id': card_id})
+
+        if not card:
+            return util.response.error(
+                status_code=404,
+                message='The specified card ID does not exist.',
+                failure='failure_nonexistent_card',
+            )
+
         return util.response.success({
             'card': card,
         })
