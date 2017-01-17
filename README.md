@@ -51,6 +51,10 @@ Add the following (or a variation thereof) to your Apache configuration.
     ServerName api.wekan.example.com
     DocumentRoot /path/to/wekan-api
     WSGIScriptAlias / /path/to/wekan-api/wekan_api.wsgi
+
+    <Directory /path/to/wekan-api>
+        Require all granted
+    </Directory>
 </VirtualHost>
 ```
 
